@@ -97,9 +97,9 @@ function sql_connect()
   global $SQLhost, $SQLport, $SQLdb, $SQLuser, $SQLpass;
 
   if ($SQLport != "")
-    $link = @mysqli_connect("$SQLhost:$SQLport","$SQLuser","$SQLpass");
+    $link = @mysqli_connect("$SQLhost","$SQLuser","$SQLpass","$SQLdb","$SQLport");
   else
-    $link = @mysqli_connect("$SQLhost","$SQLuser","$SQLpass");
+    $link = @mysqli_connect("$SQLhost","$SQLuser","$SQLpass","$SQLdb","$SQLport");
   if (!$link) {
     echo "Database access error ".mysql_errno().": ".mysql_error()."\n";
     die();
