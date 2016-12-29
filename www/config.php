@@ -43,7 +43,7 @@ $guilds_perpage = 12;
 $url_home="index.php";
 $url_players="players.php";
 $url_guilds="guilds.php";
-$url_forums="http://www.servuo.com";
+$url_forums="https://www.servuo.com/threads/myrunuo-for-servuo.6016/#post-39510";
 $url_discord="https://discordapp.com/invite/0cQjvnFUN26nRt7y";
 $url_about="about.php";
 
